@@ -1,15 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { render } from "react-dom";
+import { StyleSheet, Text, View } from "react-native";
+import AppNavigator from './navigations/navigator'
+import AppLoading from 'expo-app-loading';
+import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
+
 
 export default function App() {
+  let [fontsLoaded] = useFonts({
+    Inter_900Black,
+  });
+
+
+
+if (!fontsLoaded) {
+  return <AppLoading />;
+}
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <AppNavigator/>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
