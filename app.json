@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "bde-app",
+    "slug": "bde-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "bde-app"
+}
