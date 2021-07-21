@@ -25,23 +25,12 @@ export default function App() {
   const Drawer = createDrawerNavigator();
  
 
-const [isLoading, setIsLoading] = useState(true)
-const [user, setUser] = useState(null);
 
-useEffect(() =>{
-  setTimeout(()=>{
-    setIsLoading(!isLoading);
-    // setUser({})
-  }, 500)
-})
 
   return (
     <NavigationContainer>
-      
-     {
-       isLoading ? (<Loading/>) : user ? (<BottomTabNavigator/>) : (<DrawerNavigator/>)
-     }
-    
+      <BottomTabNavigator/>
+  
     </NavigationContainer>
   );
 }
