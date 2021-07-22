@@ -64,7 +64,7 @@ const [token, setToken] = useState("");
                 
             <View style={{paddingTop: '10%'}}>
             
-                <Input style={styles.TextInputPH} 
+                <Input style={{...FONTS.body1}} 
                 placeholder='Email'
                 leftIcon={
                     <Entypo name="email" size={24} color="#336699" />
@@ -75,15 +75,16 @@ const [token, setToken] = useState("");
 
             <View style={{paddingTop: '1%'}}>
            
-                <Input style={styles.TextInputPH} 
+                <Input style={{...FONTS.body1}} 
                 placeholder='Password'
+                secureTextEntry={true}
                 leftIcon={
                     <Entypo name="lock" size={24} color="#336699" />
                 }
                  onChangeText={text => setPassword(text)}
                 />
             </View>
-            <View style={{alignContent: 'center'}}>
+            <View style={{alignContent: 'center', ...FONTS.body1}}>
             <Button
             onPress={() => {login()}}
             title="Already a member"

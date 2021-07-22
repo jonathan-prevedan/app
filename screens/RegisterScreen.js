@@ -17,7 +17,7 @@ export default function RegisterScreen () {
   const [email, setEmail] = useState("");
   const[phone, setPhone] =useState("");
 const [password, setPassword] = useState("");
-const [token, setToken] = useState("");
+
 
 
 const navigation = useNavigation();
@@ -59,7 +59,7 @@ const navigation = useNavigation();
               
           <View style={{paddingTop: '10%'}}>
           
-              <Input style={styles.TextInputPH} 
+              <Input style={{...FONTS.body1}}  
               placeholder='Name'
               leftIcon={
                   <Entypo name="user" size={24} color="#336699" />
@@ -69,7 +69,7 @@ const navigation = useNavigation();
           </View>
           <View style={{paddingTop: '1%'}}>
          
-         <Input style={styles.TextInputPH} 
+         <Input style={{...FONTS.body1}} 
          placeholder='Email'
          leftIcon={
              <Entypo name="email" size={24} color="#336699" />
@@ -80,7 +80,7 @@ const navigation = useNavigation();
 
           <View style={{paddingTop: '1%'}}>
          
-              <Input style={styles.TextInputPH} 
+              <Input style={{...FONTS.body1}}  
               placeholder='phone'
               leftIcon={
                   <Entypo name="phone" size={24} color="#336699" />
@@ -90,8 +90,9 @@ const navigation = useNavigation();
           </View>
           <View style={{paddingTop: '1%'}}>
          
-              <Input style={styles.TextInputPH} 
+              <Input style={{...FONTS.body1}} 
               placeholder='Password'
+              secureTextEntry={true}
               leftIcon={
                   <Entypo name="lock" size={24} color="#336699" />
               }

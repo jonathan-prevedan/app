@@ -61,7 +61,7 @@ export default function CreateEvent () {
              
          <View style={{paddingTop: '10%'}}>
          
-             <Input style={styles.TextInputPH} 
+             <Input style={{...FONTS.body1}} 
              placeholder='Email'
              leftIcon={
                  <Entypo name="email" size={24} color="#336699" />
@@ -72,7 +72,7 @@ export default function CreateEvent () {
 
          <View style={{paddingTop: '1%'}}>
         
-             <Input style={styles.TextInputPH} 
+             <Input style={{...FONTS.body1}} 
              placeholder='Password'
              leftIcon={
                  <Entypo name="lock" size={24} color="#336699" />
@@ -82,7 +82,7 @@ export default function CreateEvent () {
          </View>
          <View style={{paddingTop: '1%'}}>
         
-             <Input style={styles.TextInputPH} 
+             <Input style={{...FONTS.body1}}  
              placeholder='Password'
              leftIcon={
                  <Entypo name="lock" size={24} color="#336699" />
@@ -92,7 +92,7 @@ export default function CreateEvent () {
          </View>
          <View style={{paddingTop: '1%'}}>
         
-             <Input style={styles.TextInputPH} 
+             <Input style={{...FONTS.body1}} 
              placeholder='Password'
              leftIcon={
                  <Entypo name="lock" size={24} color="#336699" />
@@ -100,7 +100,7 @@ export default function CreateEvent () {
               onChangeText={text => setDatefin(text)}
              />
          </View>
-         <View style={{alignContent: 'center'}}>
+         <View style={{alignContent: 'center', ...FONTS.body1}}>
          <Button
          onPress={() => {postevent()}}
          title="Create Event"
